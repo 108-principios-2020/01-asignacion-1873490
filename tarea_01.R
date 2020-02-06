@@ -36,6 +36,16 @@ hist(conjunto$Altura, col = "yellow" , xlab = "H.media", ylab = "H.16", main = "
 hist(conjunto$Vecinos, col = "pink" , xlab = "vecinos.3", ylab = "vecinos.4", main = "histograma de vecinos")
 hist(conjunto$Diametro, col = "blue" , xlab = "DBH.media", ylab = "DBH.16", main = "histograma de Diametro")
 
+# graficas ----------------------------------------------------------------
+
+par(mfrow=c(2,2)) 
+hist(conjunto$Altura, main= "Altura", col= "blue", xlab="Altura", ylab="frecuencia")
+hist(conjunto$Diametro, main= "Diametro", col= "yellow", xlab="Diametro", ylab="frecuencia")
+hist(conjunto$Vecinos, main= "Vecinos", col= "purple", xlab="Vecinos", ylab="frecuencia")
+hist(conjunto$Arbol, main= "Arbol", col= "green", xlab="Arbol", ylab="frecuencia")
+par(mfrow=c(1,1))
+
+
 mean(conjunto$Altura)
 mean(conjunto$Vecinos)
 mean(conjunto$Diametro)
